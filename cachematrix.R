@@ -2,7 +2,10 @@
 ## functions do
 
 ## Write a short comment describing this function
-
+## This function makes a matrix object that can cache its inverse.
+## get returns vector x stored in the main function
+##set changes the vector stored in the main function
+##setmean and getmean store the value in variable m
 makeCacheMatrix <- function(x = matrix()) {
 m <- NULL
       set <- function(y) {
@@ -18,6 +21,9 @@ m <- NULL
 
 
 ## Write a short comment describing this function
+## computes the inverse of the matrix returned by makeCacheMatrix
+
+cacheSolve <- function(x, ...)
 	m <- x$getinverse()
       	if(!is.null(m)) {
             message("getting cached data")
